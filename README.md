@@ -25,10 +25,13 @@ Uygulamamızda 5 adet farklı ülkelerin saatlerini göstereceğiz. Şehirler a�
  - Map<String, City>
 
 4- Şehirlerimizi isimlerine göre artan şekilde sıralayabilecek şekilde tasarlayacağız.
+
 5- Uygulama çalıştığında şehirleri isimlerine göre sıralı şekilde kullanıcıya göstererek (Şehir Kodu - Şehir ismi ) kullanıcıdan en az üç en fazla beş olacak  şehir kodu seçmesini isteyeceğiz.
+
 6- Seçilen her şehir için bir Thread açıp, bu threadde sürekli şehirlerin saatlerini anlık olarak göstereceğiz. 
 
 NOT: Executor service kullanalım.
+
 NOT2: Runnable interfacini implemente ederek thread yaratalım
 
 EK ÖZELLİK

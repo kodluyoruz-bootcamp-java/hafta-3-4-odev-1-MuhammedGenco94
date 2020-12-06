@@ -1,0 +1,11 @@
+
+k
+java:S1128"IRemove this unused import 'com.kodluyoruz.homework3.utils.models.Moscow'.(ø©¡ıÿÿÿÿ8‡ßÓã.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¹Ãûüÿÿÿÿ8‡ßÓã.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‚íÓüÿÿÿÿ8ÓÍ›ã.
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êï­–şÿÿÿÿ8‡ßÓã.
+A
+java:S1640"Convert this Map to an EnumMap.(¦²ÿÿÿÿÿ8‡ßÓã.
+l
+java:S1128"ORemove this unused import 'com.kodluyoruz.homework3.utils.enums.GMTDifference'.(›¿ƒü8‡ßÓã.
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(òò§È8‡ßÓã.
