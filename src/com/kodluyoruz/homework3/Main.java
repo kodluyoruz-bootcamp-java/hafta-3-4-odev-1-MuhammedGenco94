@@ -1,10 +1,11 @@
 package com.kodluyoruz.homework3;
 
-import com.kodluyoruz.homework3.utils.baseModels.City;
+import com.kodluyoruz.homework3.utils.basemodels.City;
 import com.kodluyoruz.homework3.utils.enums.CityCode;
 import com.kodluyoruz.homework3.utils.models.TimeRunnable;
 
 import java.util.*;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -45,13 +46,22 @@ public class Main {
                 System.out.println("OK.");
             }
 
-            for (int i = 0; i < cityCodes.size(); i++) {
-                City city = getMapValueByKey(codeCityHashMap, cityCodes.get(i));
+            for (String cityCode : cityCodes) {
+                City city = getMapValueByKey(codeCityHashMap, cityCode);
                 Runnable runnable = new TimeRunnable(city);
                 executorService.execute(runnable);
-                System.out.println(".\r");
             }
-        } catch (InputMismatchException e) {
+
+            /*
+              Creating new frame component, to listen the key event over it,
+              because we don't have Event Listener in Command Line (Console)..
+             */
+//            JFrame frame = new JFrame();
+//            frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+//            frame.addKeyListener(new LocalKeyListener());
+//            frame.setVisible(true);
+
+        } catch (InputMismatchException | SecurityException e) {
             System.out.println("Invalid entry, you had to enter a number!!");
         }
     }

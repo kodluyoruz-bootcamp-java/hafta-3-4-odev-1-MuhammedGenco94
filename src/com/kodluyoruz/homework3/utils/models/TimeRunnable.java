@@ -1,6 +1,8 @@
 package com.kodluyoruz.homework3.utils.models;
 
-import com.kodluyoruz.homework3.utils.baseModels.City;
+import com.kodluyoruz.homework3.utils.basemodels.City;
+
+import java.io.IOException;
 
 public class TimeRunnable implements Runnable {
     private City city;

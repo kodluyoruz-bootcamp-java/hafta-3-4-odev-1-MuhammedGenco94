@@ -1,7 +1,8 @@
-package com.kodluyoruz.homework3.utils.baseModels;
+package com.kodluyoruz.homework3.utils.basemodels;
 
 import com.kodluyoruz.homework3.interfaces.Clock;
 import com.kodluyoruz.homework3.utils.enums.CityCode;
+import com.kodluyoruz.homework3.utils.models.LocalKeyListener;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -46,19 +47,24 @@ public class City implements Clock, Comparable<City> {
 
     @Override
     public void showTime() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
 
-        while (true) {
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+
+        LocalKeyListener keyListener = new LocalKeyListener();
+
+        while (!keyListener.isPressed()) {
             LocalTime time = LocalTime.now().minusHours(3);
             time = time.plusHours(this.getCityCode().getId());
 
-            System.out.printf("%s : %s\r", this.getName(), time.format(formatter));
+            System.out.printf("%s : %s\r", this.getName(), time.format(dateTimeFormatter));
+
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
+            keyListener.getFrame().setVisible(true);
         }
     }
 

@@ -1,11 +1,11 @@
 
-k
-java:S1128"IRemove this unused import 'com.kodluyoruz.homework3.utils.models.Moscow'.(ø©¡ıÿÿÿÿ8‡ßÓã.
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¹Ãûüÿÿÿÿ8‡ßÓã.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(‚íÓüÿÿÿÿ8ÓÍ›ã.
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êï­–şÿÿÿÿ8‡ßÓã.
 A
-java:S1640"Convert this Map to an EnumMap.(¦²ÿÿÿÿÿ8‡ßÓã.
-l
-java:S1128"ORemove this unused import 'com.kodluyoruz.homework3.utils.enums.GMTDifference'.(›¿ƒü8‡ßÓã.
-U	java:S106!"9Replace this use of System.out or System.err by a logger.(òò§È8‡ßÓã.
+java:S1640"Convert this Map to an EnumMap.(¦²ÿÿÿÿÿ8Å™»Ğã.
+U	java:S106("9Replace this use of System.out or System.err by a logger.(×Ê¿Ë8²«…Ëã.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¬´ÁËıÿÿÿÿ8šñ¥Éã.
+Z	java:S106f"9Replace this use of System.out or System.err by a logger.(ø†÷¯øÿÿÿÿ8ĞÕ“Éã.
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(ùçí™ùÿÿÿÿ8ĞÕ“Éã.
+s
+java:S3457f"Q%n should be used in place of \n to produce the platform-specific line separator.(ø†÷¯øÿÿÿÿ8Å™»Ğã.
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(º–¬­úÿÿÿÿ8©ƒ‹Ëã.
+X	java:S1255"<This block of commented-out lines of code should be removed.(ˆÕ¹Ğ8»¼ÜĞã.
